@@ -1,0 +1,54 @@
+/* Estilos usando HSL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.contenedor {
+    border: 2px solid hsl(0, 0%, 0%);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.caja-1 {
+    background-color: hsl(195, 53%, 79%); /* lightblue */
+    color: hsl(240, 100%, 27%); /* darkblue */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid hsl(240, 100%, 25%); /* navy */
+}
+
+.caja-2 {
+    background-color: hsl(60, 80%, 94%); /* lightyellow */
+    color: hsl(0, 100%, 27%); /* darkred */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid hsl(348, 83%, 47%); /* crimson */
+}
+
+.caja-3 {
+    background-color: hsl(120, 73%, 75%); /* lightgreen */
+    color: hsl(120, 100%, 20%); /* darkgreen */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid hsl(120, 61%, 34%); /* forestgreen */
+}
+
+.caja-4 {
+    background-color: hsl(240, 67%, 94%); /* lavender */
+    color: hsl(300, 100%, 25%); /* purple */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid hsl(275, 100%, 25%); /* indigo */
+}
+
+.titulo {
+    color: hsl(33, 100%, 50%); /* darkorange */
+    text-align: center;
+}
+
+.parrafo {
+    color: hsl(180, 25%, 25%); /* darkslategray */
+    line-height: 1.6;
+}

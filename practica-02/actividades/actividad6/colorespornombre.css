@@ -1,0 +1,59 @@
+
+/* Estilos usando nombres de colores */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+}
+
+.contenedor {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Caso 1: Fondo con nombre de color */
+.caja-1 {
+    background-color: lightblue;
+    color: darkblue;
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid navy;
+}
+
+/* Caso 2: Texto con nombre de color */
+.caja-2 {
+    background-color: lightyellow;
+    color: darkred;
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid crimson;
+}
+
+/* Caso 3: Bordes con nombre de color */
+.caja-3 {
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid forestgreen;
+}
+
+/* Caso adicional: Diferentes colores por nombre */
+.caja-4 {
+    background-color: lavender;
+    color: purple;
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid indigo;
+}
+
+.titulo {
+    color: darkorange;
+    text-align: center;
+}
+
+.parrafo {
+    color: darkslategray;
+    line-height: 1.6;
+}

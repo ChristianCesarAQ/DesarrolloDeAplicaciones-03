@@ -1,0 +1,54 @@
+/* Estilos usando hexadecimal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+.contenedor {
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.caja-1 {
+    background-color: #add8e6; /* lightblue */
+    color: #00008b; /* darkblue */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid #000080; /* navy */
+}
+
+.caja-2 {
+    background-color: #ffffe0; /* lightyellow */
+    color: #8b0000; /* darkred */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid #dc143c; /* crimson */
+}
+
+.caja-3 {
+    background-color: #90ee90; /* lightgreen */
+    color: #006400; /* darkgreen */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid #228b22; /* forestgreen */
+}
+
+.caja-4 {
+    background-color: #e6e6fa; /* lavender */
+    color: #800080; /* purple */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid #4b0082; /* indigo */
+}
+
+.titulo {
+    color: #ff8c00; /* darkorange */
+    text-align: center;
+}
+
+.parrafo {
+    color: #2f4f4f; /* darkslategray */
+    line-height: 1.6;
+}

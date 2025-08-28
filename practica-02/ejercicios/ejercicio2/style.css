@@ -1,0 +1,241 @@
+/* ARCHIVO     : style.css */
+/* DESCRIPCIÓN : Archivo CSS para estilizar una página web con diseño responsivo, incluyendo estilos para el encabezado, hero, destinos, promociones y pie de página. */
+
+/* Estilos cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/*Estilos encabezado */
+.header {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: center; /* Centra el menú en pantallas grandes */
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos de la lista se ajusten */
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+}
+
+.nav li {
+    margin: 0 10px; /* Ajusta el espacio entre elementos */
+    flex: 1; /* Permite que los elementos se ajusten según el tamaño del contenedor */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block; /* Asegura que los enlaces ocupen todo el espacio del contenedor */
+    padding: 10px;
+    text-align: center;
+}
+
+.nav a:hover {
+    color: #1abc9c;
+}
+
+/* Estilos para la sección Hero */
+.hero {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #2980b9;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn-cta {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para la sección Destinos */
+.destinos {
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.destinos h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.destinos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+}
+
+.destinos li {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 100%; /* Ajusta al 100% del contenedor en móviles */
+    max-width: 300px; /* Tamaño máximo en pantallas grandes */
+    margin: 10px; /* Espacio entre elementos */
+    overflow: hidden; /* Evita el desbordamiento de contenido */
+}
+
+.destinos img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destinos h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.destinos p {
+    color: #7f8c8d;
+}
+
+/* Estilos para la sección Promociones */
+.promociones {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.promociones h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.promociones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.promociones li {
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.promociones h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.promociones p {
+    color: #7f8c8d;
+}
+
+.btn-promo {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-promo:hover {
+    background-color: #e67e22;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 320px) {
+    .hero h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del texto */
+    }
+
+    .hero p {
+        font-size: 1em; /* Ajusta el tamaño del texto */
+    }
+
+    .nav li {
+        margin: 0 5px; /* Reduce el espacio entre elementos */
+    }
+
+    .destinos li {
+        width: 100%; /* Ajusta al 100% del contenedor en pantallas pequeñas */
+        max-width: none; /* Elimina el ancho máximo en móviles */
+    }
+
+    .promociones li {
+        padding: 10px; /* Ajusta el relleno */
+    }
+}
+
+/* Media Queries para tabletas y pantallas más grandes */
+@media (min-width: 321px) and (max-width: 768px) {
+    .nav li {
+        margin: 0 10px; /* Espacio entre elementos */
+    }
+
+    .destinos li {
+        width: 45%; /* Dos elementos por fila */
+    }
+
+    .promociones li {
+        padding: 15px;
+    }
+}
+
+/* Media Queries para pantallas grandes (escritorios) */
+@media (min-width: 769px) {
+    .destinos ul {
+        justify-content: space-around; /* Espacio alrededor de elementos */
+    }
+
+    .destinos li {
+        width: 30%; /* Tres elementos por fila */
+    }
+}

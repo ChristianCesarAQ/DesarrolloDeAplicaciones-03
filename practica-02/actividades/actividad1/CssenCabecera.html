@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS en Cabecera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        #introduccion {
+            background-color: #e2f7e1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #0056b3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        #funciones div {
+            background-color: #e7e7e7;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #funciones h3 {
+            color: #003366;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sistemas operativos: Introducción y tipos</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#introduccion">Introducción</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#tipos">Tipos</a>
+    </nav>
+
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>El sistema operativo es el software que coordina y dirige todos los servicios y aplicaciones que utiliza el
+            usuario en una computadora, por eso es el más importante y fundamental. Se trata de programas que permiten y
+            regulan los aspectos más básicos del sistema. Los sistemas operativos más utilizados son Windows, Linux,
+            OS/2 y DOS.
+        </p>
+    </section>
+
+    <section id="funciones">
+        <h2>Funciones Principales</h2>
+        <div>
+            <h3>Gestionar la Memoria</h3>
+            <p>Gestionar la memoria de acceso aleatorio y ejecutar las aplicaciones, designando los recursos necesarios.</p>
+        </div>
+        <div>
+            <h3>Administrar CPU</h3>
+            <p>Administrar al CPU gracias a un algoritmo de programación.</p>
+        </div>
+        <div>
+            <h3>Direccionamiento de entradas y salidas</h3>
+            <p>Direccionar las entradas y salidas de datos (a través de drivers) por medio de los periféricos de entrada o
+                salida.</p>
+        </div>
+    </section>
+
+    <section id="tipos">
+        <h2>Tipos</h2>
+        <ul>
+            <li>Sistemas Operativos de Escritorio</li>
+            <li>Sistemas Operativos Móviles</li>
+            <li>Sistemas Operativos de Servidor</li>
+        </ul>
+    </section>
+</body>
+
+</html>

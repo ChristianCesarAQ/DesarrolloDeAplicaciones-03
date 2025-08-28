@@ -1,0 +1,58 @@
+/* Estilos usando RGB */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Caso 1: RGB con valores enteros (0-255) */
+.caja-1 {
+    background-color: rgb(173, 216, 230); /* lightblue */
+    color: rgb(0, 0, 139); /* darkblue */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgb(0, 0, 128); /* navy */
+}
+
+/* Caso 2: RGB con porcentajes */
+.caja-2 {
+    background-color: rgb(100%, 100%, 80%); /* lightyellow */
+    color: rgb(50%, 0%, 0%); /* darkred */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgb(86%, 8%, 24%); /* crimson */
+}
+
+/* Caso 3: Combinación valores enteros y porcentajes */
+.caja-3 {
+    background-color: rgb(144, 238, 144); /* lightgreen */
+    color: rgb(0%, 50%, 0%); /* darkgreen */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgb(34, 139, 34); /* forestgreen */
+}
+
+/* Caso 4: RGB con diferentes intensidades */
+.caja-4 {
+    background-color: rgb(230, 230, 250); /* lavender */
+    color: rgb(128, 0, 128); /* purple */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgb(75, 0, 130); /* indigo */
+}
+
+.titulo {
+    color: rgb(255, 140, 0); /* darkorange */
+    text-align: center;
+}
+
+.parrafo {
+    color: rgb(47, 79, 79); /* darkslategray */
+    line-height: 1.6;
+}

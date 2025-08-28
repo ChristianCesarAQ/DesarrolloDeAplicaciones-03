@@ -1,0 +1,56 @@
+/* Estilos usando opacidad */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+}
+
+.contenedor {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.caja-1 {
+    background-color: rgba(173, 216, 230, 0.8); /* lightblue con opacidad */
+    color: rgba(0, 0, 139, 1); /* darkblue */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgba(0, 0, 128, 0.8); /* navy con opacidad */
+}
+
+.caja-2 {
+    background-color: rgba(255, 255, 224, 0.8); /* lightyellow con opacidad */
+    color: rgba(139, 0, 0, 1); /* darkred */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgba(220, 20, 60, 0.8); /* crimson con opacidad */
+}
+
+.caja-3 {
+    background-color: rgba(144, 238, 144, 0.8); /* lightgreen con opacidad */
+    color: rgba(0, 100, 0, 1); /* darkgreen */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgba(34, 139, 34, 0.8); /* forestgreen con opacidad */
+}
+
+.caja-4 {
+    background-color: rgba(230, 230, 250, 0.8); /* lavender con opacidad */
+    color: rgba(128, 0, 128, 1); /* purple */
+    padding: 15px;
+    margin: 10px 0;
+    border: 3px solid rgba(75, 0, 130, 0.8); /* indigo con opacidad */
+}
+
+.titulo {
+    color: rgba(255, 140, 0, 0.9); /* darkorange con opacidad */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.parrafo {
+    color: rgba(47, 79, 79, 0.9); /* darkslategray con opacidad */
+    line-height: 1.6;
+}
