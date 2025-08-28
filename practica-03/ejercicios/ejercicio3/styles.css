@@ -1,0 +1,55 @@
+/* ARCHIVO     : styles.css
+FECHA       : 02/09/2024
+DESCRIPCIÓN : reglas básicas Grid*/  
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background:#610239;
+}
+/* Estilos para el contenedor Grid */
+.grid-container {
+    display: grid;
+    grid-template-areas: 'prim prim segu segu segu'
+    'prim prim terc terc cuar'
+    'quin quin terc terc sext';
+    gap: 10px;
+    height: 90vh; /*Establece la altura al 90% del viewport*/
+}
+/* Estilos para las secciones */
+.section {
+    padding: 20px;
+    margin: 10px;
+}
+/* Estilos para las secciones específicas */
+.section-a {
+    grid-area: prim;
+    background-color: #14c572; 
+    border-radius: 15px;
+}
+.section-b {
+    grid-area: segu;
+    background-color: #46b6e2; 
+    border-radius: 15px;
+}
+.section-c {
+    grid-area: terc;
+    background-color: #d18024; 
+    border-radius: 15px;
+}
+.section-d {
+    grid-area: cuar;
+    background-color: #156647; 
+    border-radius: 15px;
+}
+.section-e {
+    grid-area: quin;
+    background-color: #db50b1; 
+    border-radius: 15px;
+}
+.section-f {
+    grid-area: sext;
+    background-color: #557a40; 
+    border-radius: 15px;
+}

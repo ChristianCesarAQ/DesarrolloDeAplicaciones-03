@@ -1,0 +1,125 @@
+/* estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+/*estilos items*/
+.container-item {
+    background-color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;             /* Activa Flexbox */
+    flex-direction: column;    /* Alinea los hijos en columna */
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+/* menú/header */
+header {
+    display: flex;
+    background-color: rgb(87, 43, 207);
+    padding: 10px;
+    justify-content: center;
+}
+.cameras-title{
+    text-align: center;
+    color: #929090ef;
+}
+
+/* Estilos para el menú */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 80px;
+}
+ul.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+ul.nav li {
+    margin-right: 20px;
+}
+ul.nav li:last-child {
+    margin-right: 0;
+}
+
+.price, .stock {
+    display: flex;            
+    justify-content: center;   
+    align-items: center;       
+    background-color: #e9e7e7; 
+    font-size: 11px;           
+    font-weight: 800;          
+    border-radius: 15px;       
+    padding: 0 1rem;           
+    height: 22px;  
+    margin-bottom: 10px;
+               
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       /* Alinea verticalmente al centro */
+    margin-bottom: 10px;
+    margin-top: auto;
+    
+}
+button {
+    background-color: #24a18d;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 100%;
+    border: 1px solid #35b6a0;
+    border-radius: 4px;
+    margin-top: 0;
+    
+}
+
+/* Estilos para pantallas mayores o iguales a 900px */
+@media (min-width: 900px) {
+    .container-item {
+        flex-basis: calc(33.33% - 20px); 
+    }
+}
+/* Estilos para pantallas menores a 900px y mayores o iguales a 480px */
+@media (max-width: 899px) and (min-width: 480px) {
+    .container-item {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+/* Estilos para pantallas pequeños, menos de 480px*/
+@media (max-width: 480px) {
+    .container-item {
+        flex-basis: 100%; /*todo el hancho de pantalla*/
+    }
+    ul.nav {
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+        padding: 12px 0px;
+        
+    } 
+}
