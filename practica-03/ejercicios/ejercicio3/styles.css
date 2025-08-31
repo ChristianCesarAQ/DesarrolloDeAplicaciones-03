@@ -1,7 +1,6 @@
 /* ARCHIVO     : styles.css
-FECHA       : 02/09/2024
 DESCRIPCIÓN : reglas básicas Grid*/  
-/* Estilos generales */
+/* Estilo generales */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -11,7 +10,8 @@ body {
 /* Estilos para el contenedor Grid */
 .grid-container {
     display: grid;
-    grid-template-areas: 'prim prim segu segu segu'
+    grid-template-areas: 
+    'prim prim segu segu segu'
     'prim prim terc terc cuar'
     'quin quin terc terc sext';
     gap: 10px;
