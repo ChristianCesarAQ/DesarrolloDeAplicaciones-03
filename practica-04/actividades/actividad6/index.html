@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <section>
+        <h1>Uso de Objeto Window</h1>
+        <script>
+            //función que nos permita visualizar las propiedades del objeto Window
+            function mostrarPropiedadesWindow() {
+                const windowObject = window;
+                const screenWidth = windowObject.screen.width;
+                const screenHeight = windowObject.screen.height;
+                alert(`Propiedades del objeto Window:
+Screen Width: ${screenWidth}px
+Screen Height: ${screenHeight}px`);
+            }
+            //Llamar a la función para mostrar las propiedades del objeto Window
+            mostrarPropiedadesWindow();
+        </script>
+    </section>
+    <section>
+        <h1>Uso del Objeto Array</h1>
+        <script>
+            //visualizar las propiedades del objeto Array
+            function mostrarPropiedadesArray() {
+                const ejemploArray = [1, 2, 3, 4, 5];
+                const arrayLength = ejemploArray.length;
+                const arrayJoin = ejemploArray.join(', ');
+                alert(`Propiedades del objeto Array:
+Length: ${arrayLength}
+Join: ${arrayJoin}`);
+            }
+            //mostrar las propiedades del objeto Array
+            mostrarPropiedadesArray();
+        </script>
+    </section>
+    <section>
+        <h1>Uso del Objeto Number</h1>
+        <script>
+            //permite visualizar las propiedades del objeto Number
+            function mostrarPropiedadesNumber() {
+                const ejemploNumero = 42;
+                const numeroToString = ejemploNumero.toString();
+                const numeroToFixed = ejemploNumero.toFixed(2);
+                alert(`Propiedades del objeto Number:
+ToString: ${numeroToString}
+ToFixed: ${numeroToFixed}`);
+            }
+            //Number
+            mostrarPropiedadesNumber();
+        </script>
+    </section>
+</body>
+</html>

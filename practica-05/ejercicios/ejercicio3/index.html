@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Tu tienda de videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                       url('bg.avif');
+            background-size: cover;
+            padding: 100px 0;
+        }
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-controller me-2"></i>GameStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Consolas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light position-relative me-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                    </a>
+                    <a href="#" class="btn btn-outline-light"><i class="bi bi-person"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Los mejores juegos al mejor precio</h1>
+            <p class="lead mb-4">Descubre ofertas exclusivas en videojuegos</p>
+            <a href="#products" class="btn btn-primary btn-lg">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-4">Juegos Destacados</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <span class="position-absolute top-0 end-0 badge bg-danger m-2">-20%</span>
+                        <img src="fornite.jpg" 
+                             class="card-img-top" alt="fornite" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fornite</h5>
+                            <p class="card-text">Batalla campal multijugador con skins icónicas. ¡Supervivencia y estilo en un mundo vibrante!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-danger fw-bold">$49.99</span>
+                                    <span class="text-muted text-decoration-line-through ms-2">$59.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="gtav.png" 
+                             class="card-img-top" alt="gta v" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">GTA V</h5>
+                            <p class="card-text"> El sandbox definitivo. Vive crimen, libertad y caos en Los Santos con tres protagonistas en una épica historia criminal online y offline.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-danger fw-bold">$54.99</span>
+                                <button class="btn btn-primary btn-sm">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <span class="position-absolute top-0 end-0 badge bg-danger m-2">-15%</span>
+                        <img src="spiderman.jpeg" 
+                             class="card-img-top" alt="spiderman" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">spiderman</h5>
+                            <p class="card-text">Swingeo auténtico por Nueva York como Spidey. Combate acrobático, historia emotiva y traje clásico en la piel del héroe arácnido.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-danger fw-bold">$42.49</span>
+                                    <span class="text-muted text-decoration-line-through ms-2">$49.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles de producto -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Detalles del Producto</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="gtav.png" 
+                         class="img-fluid rounded" alt="The Last Adventure">
+                </div>
+                <div class="col-md-6">
+                    <h2>GTA V</h2>
+                    <div class="mb-3">
+                        <span class="text-danger fw-bold fs-3">$49.99</span>
+                        <span class="text-muted text-decoration-line-through ms-2">$59.99</span>
+                        <span class="badge bg-danger ms-2">-20%</span>
+                    </div>
+                    <p class="mb-3">Vive crimen, libertad y caos en Los Santos con tres protagonistas.</p>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Plataforma:</label>
+                        <select class="form-select">
+                            <option>PlayStation 5</option>
+                            <option>Xbox Series X</option>
+                            <option>PC</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Cantidad:</label>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary">-</button>
+                            <input type="number" class="form-control mx-2" value="1" style="width: 70px;">
+                            <button class="btn btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg w-100">
+                        <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--modal Carrit-->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-cart3 me-2"></i>Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Item 1 -->
+                    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                        <img src="gtav.png" 
+                             class="img-thumbnail me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0">GTV V</h6>
+                            <small class="text-muted">PS5 · $54.99</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-outline-secondary">-</button>
+                            <span class="mx-2">1</span>
+                            <button class="btn btn-sm btn-outline-secondary">+</button>
+                            <button class="btn btn-sm btn-outline-danger ms-2"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Resumen -->
+                    <div class="border-top pt-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal:</span>
+                            <span>$54.99</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Envío:</span>
+                            <span class="text-success">Gratis</span>
+                        </div>
+                        <div class="d-flex justify-content-between fw-bold fs-5">
+                            <span>Total:</span>
+                            <span>$54.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>GameStore</h5>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                        <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <address>
+                        <i class="bi bi-geo-alt me-2"></i> Av. Progreso 123<br>
+                        <i class="bi bi-envelope me-2"></i> info@gamestore.com<br>
+                        <i class="bi bi-phone me-2"></i> (123) 456-7890
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2025 GameStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

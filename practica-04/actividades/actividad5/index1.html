@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iteradores de Arrays</title>
+  <script>
+    const numeros = [1, 2, 3, 4];
+    const palabras = new Array("Hola", "Mundo", "JavaScript");
+    const objetos = Array.of(
+      { nombre: "Edy", edad: 36 },
+      { nombre: "Josefina", edad: 24 },
+      { nombre: "Mario", edad: 40 }
+    );
+
+    function agregarNumero() {
+      let nuevoNumero = prompt("Ingrese un número:");
+      numeros.push(Number(nuevoNumero));
+      visualizarResultados();
+    }
+    function eliminarUltimoNumero() {
+      numeros.pop();
+      visualizarResultados();
+    }
+
+    function agregarPalabra() {
+      let nuevaPalabra = prompt("Ingrese una palabra:");
+      palabras.push(nuevaPalabra);
+      visualizarResultados();
+    }
+    function eliminarPrimeraPalabra() {
+      palabras.shift();
+      visualizarResultados();
+    }
+
+    function agregarObjeto() {
+      let nombre = prompt("Ingrese un nombre:");
+      let edad = prompt("Ingrese una edad:");
+      objetos.push({ nombre: nombre, edad: Number(edad) });
+      visualizarResultados();
+    }
+    function eliminarPrimerObjeto() {
+      objetos.shift();
+      visualizarResultados();
+    }
+
+    // ITERADORES
+    function mostrarCuadrados() {
+      const cuadrados = numeros.map(n => n * n);
+      alert("Cuadrados: " + cuadrados.join(", "));
+    }
+    function mostrarPalabrasMayusculas() {
+      const mayusculas = palabras.map(p => p.toUpperCase());
+      alert("Palabras en mayúsculas: " + mayusculas.join(", "));
+    }
+    function mostrarMayoresDe30() {
+      const mayores = objetos.filter(obj => obj.edad > 30);
+      alert("Personas mayores de 30: " + JSON.stringify(mayores));
+    }
+    function listarNombres() {
+      let nombres = "";
+      objetos.forEach(obj => { nombres += obj.nombre + " "; });
+      alert("Nombres: " + nombres);
+    }
+
+    function visualizarResultados() {
+      document.getElementById("numeros").innerHTML = "Números: " + numeros.join(", ");
+      document.getElementById("palabras").innerHTML = "Palabras: " + palabras.join(", ");
+      document.getElementById("objetos").innerHTML = "Objetos: " + JSON.stringify(objetos);
+    }
+
+    window.onload = visualizarResultados;
+  </script>
+</head>
+<body>
+  <h2>Iteradores de Arrays</h2>
+  <div id="numeros"></div>
+  <button onclick="agregarNumero()">Agregar Número</button>
+  <button onclick="eliminarUltimoNumero()">Eliminar Último Número</button>
+  <button onclick="mostrarCuadrados()">Mostrar Cuadrados</button>
+  <div id="palabras"></div>
+  <button onclick="agregarPalabra()">Agregar Palabra</button>
+  <button onclick="eliminarPrimeraPalabra()">Eliminar Primera Palabra</button>
+  <button onclick="mostrarPalabrasMayusculas()">Palabras en Mayúsculas</button>
+  <div id="objetos"></div>
+  <button onclick="agregarObjeto()">Agregar Objeto</button>
+  <button onclick="eliminarPrimerObjeto()">Eliminar Primer Objeto</button>
+  <button onclick="mostrarMayoresDe30()">Mostrar Mayores de 30</button>
+  <button onclick="listarNombres()">Listar Nombres</button>
+</body>
+</html>

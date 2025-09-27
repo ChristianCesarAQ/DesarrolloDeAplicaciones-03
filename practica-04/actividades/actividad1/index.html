@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividad 1</title>
+    </head>
+    <body>
+        <header>
+            <h1>Actividad 1</h1>
+            <nav>
+                <!-- Navigation-->
+
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>JS</h2>
+                <p>JavaScript funcionalidad bàsica</p>
+                <button id="btnShow">Mostrar mensaje</button>
+                <button id="btnHide">Ocultar mensaje</button>
+               <!--id="mensajeDiv" style="display:none; margin-top:10px; padding:10px; border:1px solid #ccc; background:#f9f9f9;">
+                </div>--> 
+                <div style="width:80px; height:80px; background:#3498db; margin:10px; display:inline-block; border-radius:8px;"></div>
+                <div style="width:80px; height:80px; background:#e74c3c; margin:10px; display:inline-block; border-radius:8px;"></div>
+                <div style="width:80px; height:80px; background:#2ecc71; margin:10px; display:inline-block; border-radius:8px;"></div>
+                <div style="width:80px; height:80px; background:#f1c40f; margin:10px; display:inline-block; border-radius:8px;"></div>
+            </section>
+        </main>
+        
+        <script>
+            // Mostrar el div al hacer clic en el botón
+            document.getElementById('btnShow').onclick = function() {
+                document.getElementById('mensajeDiv').style.display = 'block';
+            };
+            // Ocultar el div al hacer clic en el botón
+            document.getElementById('btnHide').onclick = function() {
+                document.getElementById('mensajeDiv').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

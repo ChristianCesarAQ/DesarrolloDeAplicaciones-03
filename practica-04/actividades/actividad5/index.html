@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de Arrays - JavaScript</title>
+  <script>
+    //Creacion de array numérico mediante corchetes
+    const numeros = [1, 2];
+
+    //Creación de array de strings usando new Array()
+    const palabras = new Array("Hola", "Mundo");
+
+    //Array de objetos usando Array.of()
+    const objetos = Array.of(
+      { nombre: "Edy", edad: 36 },
+      { nombre: "Josefina", edad: 24 }
+    );
+
+    //ingreso de datos a los arreglos
+    function agregarNumero() {
+      let nuevoNumero = prompt("Ingrese un número:");
+      numeros.push(Number(nuevoNumero)); // Convertir a número
+      visualizarResultados();
+    }
+
+    function agregarPalabra() {
+      let nuevaPalabra = prompt("Ingrese una palabra:");
+      palabras.push(nuevaPalabra);
+      visualizarResultados();
+    }
+
+    function agregarObjeto() {
+      let nombre = prompt("Ingrese un nombre:");
+      let edad = prompt("Ingrese una edad:");
+      objetos.push({ nombre: nombre, edad: Number(edad) });
+      visualizarResultados();
+    }
+
+    // Función para visualizar los resultados en la página web
+    function visualizarResultados() {
+      document.getElementById("numeros").innerHTML = "Números: " + numeros.join(", ");
+      document.getElementById("palabras").innerHTML = "Palabras: " + palabras.join(", ");
+      document.getElementById("objetos").innerHTML = "Objetos: " + JSON.stringify(objetos);
+    }
+
+    //inicializar resultados al cargar la página
+    window.onload = visualizarResultados;
+  </script>
+</head>
+<body>
+
+  <h1>Arrays JavaScript</h1>
+  
+  <div id="numeros"></div>
+  <div id="palabras"></div>
+  <div id="objetos"></div>
+
+  <button onclick="agregarNumero()">Agregar Número</button>
+  <button onclick="agregarPalabra()">Agregar Palabra</button>
+  <button onclick="agregarObjeto()">Agregar Objeto</button>
+
+</body>
+</html>
