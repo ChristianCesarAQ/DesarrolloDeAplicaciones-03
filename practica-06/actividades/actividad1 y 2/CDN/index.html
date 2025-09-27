@@ -1,0 +1,30 @@
+<!-- Archivo: index.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>CDN</title>
+    
+    <!-- react -->
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <!-- react-dom -->
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script> 
+    <!-- babel -->
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div> 
+    <script type="text/babel">
+      //componente de clse 
+      class App extends React.Component {
+        //metodo unico y obligatorio para componentes de clase
+        render(){
+          return <h1> Prueba mediante cdn, retorno elemento simple </h1>
+        }
+      }
+      //renderizado
+      ReactDOM.render(<App/>, document.getElementById('root'))
+    </script>
+  </body>
+</html>
